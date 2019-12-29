@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
             val currentYear = c.get(Calendar.YEAR);
 
             val dpd = DatePickerDialog(this,
-                DatePickerDialog.OnDateSetListener { view, year, month, day -> 
+                DatePickerDialog.OnDateSetListener { view, year, month, day ->
                     txtDOB.setText(
                         day.toString() + "/" +
                                 (month + 1).toString() + "/" + year.toString()
